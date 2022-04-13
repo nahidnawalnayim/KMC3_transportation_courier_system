@@ -42,8 +42,80 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   
 }
-
-
+#card1{
+  font-size: 16px;
+}
+@media screen and (max-width: 1539px){
+  #carddiv{
+    height: 650px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1535px){
+  #card1{
+    height: 18rem;
+    width: 18rem;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1280px){
+  #carddiv{
+    width: 100%;
+    height: 950px;
+    
+  }
+}
+@media screen and (max-width: 1280px){
+  #card1{
+    font-size:14px
+  }
+}
+@media screen and (max-width: 1280px){
+  #carddiv{
+    display:none;
+  }
+}
+@media screen and (max-width: 1024px){
+  #card1{
+    position: relative;
+    left: 60px;
+  }
+}
+@media screen and (max-width: 600px){
+  #carddiv{
+    display: none;
+  }
+}
+@media screen and (max-width: 1280px){
+  #card1{
+    margin-left: 180px;
+    width: 24rem;
+  }
+}
+@media screen and (max-width: 1025px){
+  #card1{
+    width:18rem;
+    height: 18rem;
+    font-size: 12px;
+    margin: 5px;
+    margin-left: 40px;
+  }}
+  @media screen and (max-width: 770px){
+  #carddiv{
+    display:none;
+  }}
+  /* #card1:nth-child(1){
+    padding: 5px;
+  }
+  #card1:nth-child(3){
+    padding: 5px;
+    height: 18rem;
+  }
+  
+  #card1:nth-child(4){
+    padding: 0;
+  }
+} */
 </style>
 
 </head>
@@ -78,10 +150,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                   <!-- Navbar -->
                   <navbar class="navbar hidden md:block">
                       <ul class="flex space-x-8 text-base text-slate-700 font-bold font-semibold">
-                          <li><a href="../login" class="active border-b-2 border-orange-500 pb-2">Reviews</a></li>
-                          <li><a href="#" class="hover:text-orange-500">People</a></li>
-                          <li><a href="#" class="hover:text-orange-500">Partners</a></li>
-                          <li><a href="#" class="hover:text-orange-500">Feedback</a></li>
+                          <li><a href="../login" class="active border-b-2 border-orange-500 pb-2">Contact Us</a></li>
+                          <li><a href="#services" class="hover:text-orange-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-1000 delay-700">Services</a></li>
+                          <li><a href="#whyus" class="hover:text-orange-500">Speciality</a></li>
+                          <li><a href="#carddiv" class="hover:text-orange-500">Feedback</a></li>
                           <li><a href="#" class="hover:text-orange-500">Pricing</a></li>
                          
                       </ul>
@@ -110,7 +182,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                   <div class="get-app flex space-x-5 mt-10 justify-center md:justify-start">
                       
                
-                    <button class="w-32 h-3/4 rounded-3xl bg-orange-600 hover:bg-[#5409d6] transition delay-75 text-white font-semibold text-base tracking-normal brightness-125 drop-shadow-xl md:w-56 h-16 rounded-full text-xs" style="font-family: 'Poppins', sans-serif;">
+                    <button class="w-32 h-10 rounded-3xl bg-orange-600 hover:bg-[#5409d6] transition delay-75 text-white font-semibold tracking-normal brightness-125 drop-shadow-xl md:w-56 md:h-14 rounded-xl text-xs md:text-lg" style="font-family: 'Poppins', sans-serif;">
                         Learn More
                       </button>
                   </div>
@@ -120,7 +192,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             
               <!-- hero image -->
               <div class="hero-image col-span-6 pattern-dots-md bg-red" data-aos="fade-left" data-aos-duration="3000">
-                 <img style="transform:translate(30px, -30px);"  src="assets/jud-mackrill-Of_m3hMsoAA-unsplash.jpg" class="rounded-lg w-80 md:w-full m-4">
+                 <img style="transform:translate(30px, -30px);" src="/images/jud-mackrill-Of_m3hMsoAA-unsplash.jpg" class="rounded-lg w-80 md:w-full m-4">
               
               </div>
           </div>
@@ -207,7 +279,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 <!----------------offer---------------------->
-<section class="text-gray-600 body-font">
+<section class="text-gray-600 body-font" id="services">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"></h2>
@@ -226,7 +298,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             </div>
             <div class="flex-grow">
               <p class="leading-relaxed text-base">With full of creative website deisgners,we can create you a responsive and seo friendly website.</p>
-              <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+              <a class="mt-10 text-indigo-500 inline-flex items-center text-md">Learn More
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                   <path d="M5 12h14M12 5l7 7-7 7"></path>
                 </svg>
@@ -372,11 +444,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 
 <!-------------------Why us-------------->
-<h1 class="text-6xl font-bold flex justify-center pt-10 text-slate-800">Why us</h1>
+<h1 class="text-6xl font-bold flex justify-center pt-10 text-slate-800" id="whyus">Why us</h1>
 <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="flex flex-wrap w-full">
-        <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="assets/asanew.png" alt="step">
+        <img class="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12" src="/images/asanew.png" alt="step">
 
         <div class="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6 pl-7">
           <div class="flex relative pb-12">
@@ -457,22 +529,22 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 <!----------------Reviews------------------------->
 
-<div class="review">
+<div class="review" id="carddiv">
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-12 mx-auto">
           <h1 class="text-6xl font-bold title-font text-gray-900 mb-12 text-center">What Our Client Say </h1>
           <div class="flex flex-wrap -m-4 ">
-            <div class="p-4 md:w-96 w-full" id="card1" data-aos="zoom-in" data-aos-duration="5000">
+            <div class="p-4 md:w-80 h-96 w-full" id="card1" data-aos="zoom-in" data-aos-duration="5000">
               <div class="h-full bg-gray-100 p-8 rounded">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
-                <p class="leading-relaxed mb-6">They were very responsive,all requested were implemented immedietly.We didnt know what we needed in lot of detail beforehand,but they guided us through the process very well,asked for clarification where it was needed and handled our change requests professionaly.</p>
+                <p class="leading-relaxed mb-3 text-justify">They were very responsive.We didnt know what we needed in lot of detail beforehand,but they guided us through the process very well.</p>
                 <a class="inline-flex items-center">
                  
                   <span class="flex-grow flex flex-col pl-4">
                     <span class="title-font font-medium text-gray-900">Rbuchmann</span>
-                    <span class="text-gray-500 text-sm">Client from Fiverr.</span>
+                    <span class="text-gray-500">Client from Fiverr.</span>
                   </span>
                 </a>
               </div>
@@ -481,14 +553,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
               <div class="h-full bg-gray-100 p-8 rounded">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                </svg><p>I gave them project to build my website page.I am completely satisfied with their work.Their communication skill is excellent.Highly recommend them</p>
-                <a class="inline-flex items-center pt-8">
+                </svg><p class="text-justify">I gave them project to build my website page.I am completely satisfied with their work.Highly recommend them</p>
+         
                  
-                  <span class="flex-grow flex flex-col pl-4 pt-4">
-                    <span class="title-font font-medium text-gray-900 pt-16">Evijafo</span>
-                    <span class="text-gray-500 text-sm">Client from Fiverr</span>
+                  <span class="flex-grow flex flex-col pl-4 pt-5">
+                    <span class="title-font font-medium text-gray-900 pt-10">Evijafo</span>
+                    <span class="text-gray-500">Client from Fiverr</span>
                   </span>
-                </a>
+            
               </div>
             </div>
 
@@ -496,12 +568,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                 <div class="h-full bg-gray-100 p-8 rounded">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
                     <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                  </svg><p>This was a fantastic experience.I gave them a design doc of random ideas and thoughts and they managed to pull it all together into a cohesive website that suited our needs.Would work again with them.</p>
+                  </svg><p class="text-justify">This was a fantastic experience.I gave them a design doc of random ideas and thoughts and they managed to pull it all together into a cohesive website that suited our needs.Would work again with them.</p>
                   <a class="inline-flex items-center pt-8">
                     
-                    <span class="flex-grow flex flex-col pl-4 pt-4">
+                    <span class="flex-grow flex flex-col pl-4 pt-1">
                       <span class="title-font font-medium text-gray-900">Serissae</span>
-                      <span class="text-gray-500 text-sm">Client from Linkedin</span>
+                      <span class="text-gray-500">Client from Linkedin</span>
                     </span>
                   </a>
                 </div>
@@ -511,12 +583,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                 <div class="h-full bg-gray-100 p-8 rounded">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
                     <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                  </svg><p>Fantastic service as always.Their communication and quality of work are consistently high.</p>
+                  </svg><p class="text-justify">Fantastic service as always.Their communication and quality of work are consistently high.</p>
                   <a class="inline-flex items-center pt-8">
                    
                     <span class="flex-grow flex flex-col pl-4 pt-4">
-                      <span class="title-font font-medium text-gray-900 pt-20">Stacy Russel</span>
-                      <span class="text-gray-500 text-sm">Client from upwork.</span>
+                      <span class="title-font font-medium text-gray-900 pt-10">Stacy Russel</span>
+                      <span class="text-gray-500">Client from upwork.</span>
                     </span>
                   </a>
                 </div>
@@ -529,7 +601,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 <br>
 
 <!-----------------FORM--------------------------->
-<div class="grid grid-cols-2 gap-4 grid-flow-col bg-indigo-500">
+<!-- <div class="grid grid-cols-2 gap-4 grid-flow-col bg-indigo-500">
 <div class="col-span-6 justify-items-end">
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24  mx-auto">
@@ -558,7 +630,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 </div>
 
 </div>
-
+ -->
 
 
 
